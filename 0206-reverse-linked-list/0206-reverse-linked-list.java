@@ -8,7 +8,23 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
- //using iterative method
+
+//Solution-3: recursive approach
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        if(head == null || head.next == null) return head;
+        ListNode newHead = reverseList(head.next);
+        ListNode nextNode = head.next;
+        nextNode.next = head; 
+        head.next = null;
+
+        return newHead;
+    }
+}
+
+
+/*
+ //Solution-2: using iterative method
 class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode temp = head, prevNode = null;
@@ -23,6 +39,8 @@ class Solution {
         return head;
     }
 }
+
+*/
 
 
 
