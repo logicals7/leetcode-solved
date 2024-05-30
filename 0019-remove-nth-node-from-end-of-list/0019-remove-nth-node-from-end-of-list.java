@@ -8,6 +8,33 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
+//Solution-2:
+//Take two pointers slow & fast. Initially, move the pointer to the value of n.
+//Then take another loop & move slow & fast by one until fast reaches end.
+//the deletion node will be slow.next
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        //if(head == null || head.next == null) return null;
+        ListNode slow = head, fast = head;
+        for(int i = 0; i < n; i++) fast = fast.next;
+
+        // If fastp becomes null, the Nth node from the end is the head
+        if (fast == null) return head.next;
+
+        while(fast.next != null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+        slow.next = slow.next.next;
+        return head;
+
+        
+    }
+}
+
+
+/*
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if(head == null || head.next == null) return null;
@@ -39,3 +66,5 @@ class Solution {
         return head;
     }
 }
+
+*/
