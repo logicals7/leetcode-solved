@@ -19,7 +19,7 @@ class Solution {
         ListNode slow = head, fast = head;
         for(int i = 0; i < n; i++) fast = fast.next;
 
-        // If fastp becomes null, the Nth node from the end is the head
+        // If fast becomes null, the Nth node from the end is the head
         if (fast == null) return head.next;
 
         while(fast.next != null){
