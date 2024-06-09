@@ -3,7 +3,7 @@ class Solution {
         int repeated = 1;
         StringBuilder repeatedA = new StringBuilder(a);
         
-        //repeat String a until its len becomes atleast equal to b
+        //repeat String a until its len is lesser than b
         while(repeatedA.length() < b.length()){
             repeatedA.append(a);
             repeated++;
