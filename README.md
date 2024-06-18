@@ -5,6 +5,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Two Pointers
 |  |
 | ------- |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/logicals7/leetcode-solved/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0344-reverse-string](https://github.com/logicals7/leetcode-solved/tree/master/0344-reverse-string) |
 # String
 |  |
@@ -21,3 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/logicals7/leetcode-solved/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+# Array
+|  |
+| ------- |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/logicals7/leetcode-solved/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
