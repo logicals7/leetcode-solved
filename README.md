@@ -26,3 +26,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/logicals7/leetcode-solved/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
+| [0152-maximum-product-subarray](https://github.com/logicals7/leetcode-solved/tree/master/0152-maximum-product-subarray) |
+# Dynamic Programming
+|  |
+| ------- |
+| [0152-maximum-product-subarray](https://github.com/logicals7/leetcode-solved/tree/master/0152-maximum-product-subarray) |
