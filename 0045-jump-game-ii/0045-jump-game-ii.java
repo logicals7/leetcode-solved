@@ -1,5 +1,32 @@
 class Solution {
     public int jump(int[] nums) {
+        int jumps = 0;
+        int lastJump = 0; // Current boundary of the segment we are considering
+        int coverage = 0;   // coverage index we can reach with the current number of jumps
+
+        for (int i = 0; i < nums.length - 1; i++) {
+            coverage = Math.max(coverage, i + nums[i]);
+
+            if (i == lastJump) {
+                jumps++;
+                lastJump = coverage;
+
+                // If at any point, we can already reach or exceed the last index, return jumps
+                if (lastJump >= nums.length - 1) {
+                    return jumps;
+                }
+            }
+        }
+
+        return jumps;
+    }
+}
+
+
+
+/*
+class Solution {
+    public int jump(int[] nums) {
         int jump = 0;
         
         int left = 0, right = 0;
@@ -21,3 +48,4 @@ class Solution {
         return jump;
     }
 }
+*/
